@@ -1,0 +1,73 @@
+! MPLUS CODE FOR GROWTH MIXTURE MODEL FOR doi: xxx-xxx-
+! Authors: Moritz Herle & Bianca De Stavola 
+ 
+ 
+ TITLE: GMM 2 class BMI  girls only: bmi8 bmi10 bmi11 bmi12 bmi13 bmi16
+
+
+  DATA:
+   FILE IS "S:\ICH_PPP_CENB_MAGNET\Paper 1\October 2018\MplusDataOct.dat"
+            Format is free;
+ !           LISTWISE=ON;
+
+
+VARIABLE: NAMES ARE
+ID sex bw 
+ht8 wt8 bmi8 
+ht10 wt10 bmi10 
+ht11 wt11 bmi11 
+ht12 wt12 bmi12 
+wt13 ht13 
+ht16 wt16 
+FatMass18 LeanMass18 ht18 wt18 imp18 fatperc18 bmi18 
+matage mated matses 
+bmi13 bmi16 
+lbmi8 lbmi11 lbmi12 lbmi13 lbmi16 lbmi18 lbmi10;
+  
+  USEV ARE
+     bmi8 bmi10 bmi11 bmi12 bmi13 bmi16 ;
+	 
+! Restrict analysis to girls only 
+	 
+     USEOBSERVATIONS sex EQ 2;  
+
+  MISSING ARE .;
+
+            IDVARIABLE= id;
+
+! If you would like to covariates to the model add them using the AUXILIARY option 			
+!  AUXILIARY = matage mated matses 
+
+
+! Change the number of classes here 
+  CLASSES= C(2);
+
+ 
+   ANALYSIS:
+              TYPE = MIXTURE ;
+              ALGORITHM=INTEGRATION;
+      	      STARTS = 100 20;
+    		  STITERATIONS = 10 ;
+              PROCESS= 10(STARTS)
+
+    MODEL:
+! This model includes includes an intercept (i), a slope (s) and a quadratic slope (q)
+! Variables need to be centred around the middle point to space out the timepoints realistically 
+
+    %OVERALL%
+     i s q | bmi8@-.4 bmi10@-.2 bmi11@-0.1 bmi12@0 bmi13@0.1 bmi16@0.4  ;
+
+
+	 
+ 
+  PLOT:
+  SERIES = bmi8-bmi16(S);
+  TYPE = PLOT3 ;
+  OUTPUT:	TECH1 TECH8;
+
+! Option to save out the class probabilities and assigned classes per participant  
+  
+!Savedata: 
+!save=cprob FSCORES; 
+!file=GMM_BMI_2Cl.txt;
+
