@@ -7,6 +7,8 @@ Analyses for this project were conducted in MPLUS (Version 8.1) and STATA 15 SE.
 ****************************
 This repository includes the following
 
+1. Models to derive trajectories 
+
 GROWTH MIXTURE MODEL
 
 GrowhtMixtureModel.txt
@@ -16,6 +18,10 @@ LATENT CLASS GROWTH ANALYSIS
 LatentClassGrowthAnalysis.txt
 
 LONGITUDINAL LATENT CLASS ANALYSIS
+
+LonggitudinalLatentClassAnalysis.txt
+
+
 
 
 
