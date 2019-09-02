@@ -35,10 +35,6 @@ lbmi8 lbmi11 lbmi12 lbmi13 lbmi16 lbmi18 lbmi10;
 
             IDVARIABLE= id;
 
-! If you would like to covariates to the model add them using the AUXILIARY option 			
-!  AUXILIARY = matage mated matses 
-
-
 ! Change the number of classes here 
   CLASSES= C(2);
 
