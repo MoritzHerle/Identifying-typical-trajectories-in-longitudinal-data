@@ -19,7 +19,7 @@ LatentClassGrowthAnalysis.txt
 
 LONGITUDINAL LATENT CLASS ANALYSIS
 
-LonggitudinalLatentClassAnalysis.txt
+LongitudinalLatentClassAnalysis.txt
 
 
 
