@@ -51,12 +51,14 @@ lbmi8 lbmi11 lbmi12 lbmi13 lbmi16 lbmi18 lbmi10;
               PROCESS= 10(STARTS)
 
     MODEL:
-! This model includes includes an intercept (i), a slope (s) and a quadratic slope (q)
+! This model includes includes an intercept (i), linear slope (s) and a quadratic slope (q)
 ! Variables need to be centred around the middle point to space out the timepoints realistically 
 
     %OVERALL%
      i s q | bmi8@-.4 bmi10@-.2 bmi11@-0.1 bmi12@0 bmi13@0.1 bmi16@0.4  ;
-
+     
+     ! Allows class-spcific random effects (for intercept, linear and quadratic slope)
+     i-q ;
 
 	 
  
