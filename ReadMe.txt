@@ -15,7 +15,8 @@ This repository includes the following example Mplus scripts to estimate:
 
      c) LONGITUDINAL LATENT CLASS ANALYSIS: LongitudinalLatentClassAnalysis.txt
 
-2. Models that relate an explanatory variable to latent trajectories using:
+2. Models that relate an explanatory variable to latent trajectory classes using:
+
      a) 1-step approach for a GROWTH MIXTURE MODEL: LBMI_GMM4_onBW_1step.txt
 
      b) 3-steps approach for a GROWTH MIXTURE MODEL: LBMI_GMM4_onBW_3steps.txt
@@ -23,6 +24,16 @@ This repository includes the following example Mplus scripts to estimate:
      c) 1-step approach for a LATENT CLASS GROWTH ANALYSIS MODEL: LBMI_LCGA5_onBW_1step.txt
 
      d) 3-steps approach for a LATENT CLASS GROWTH ANALYSIS MODEL: LBMI_LCGA5_onBW_3steps.txt
+
+3. Models that relate latent trajectory classes to an outcome using:
+
+     a) 1-step approach for a GROWTH MIXTURE MODEL: LBMI_GMM4_onY_1step.txt
+
+     b) 3-steps approach for a GROWTH MIXTURE MODEL: LBMI_GMM4_onY_3steps.txt
+     
+     c) 1-step approach for a LATENT CLASS GROWTH ANALYSIS MODEL: LBMI_LCGA5_onY_1step.txt
+
+     d) 3-steps approach for a LATENT CLASS GROWTH ANALYSIS MODEL: LBMI_LCGA5_onY_3steps.txt
 
 
 
