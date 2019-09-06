@@ -5,22 +5,24 @@ All code written by Moritz Herle and Bianca De Stavola.
 This publication is part of a grant led by Nadia Micali funded by the UK Medical Research Council and the Medical Research Foundation (ref: MR/R004803/1)
 Analyses for this project were conducted in MPLUS (Version 8.1) and STATA 15 SE. 
 ****************************
-This repository includes the following
+This repository includes the following example Mplus scripts to estimate: 
 
-1. Models to derive trajectories 
+1. Three types of latent trajectory models:
 
-GROWTH MIXTURE MODEL
+     a) GROWTH MIXTURE MODEL: GrowhtMixtureModel.txt
 
-GrowhtMixtureModel.txt
+     b) LATENT CLASS GROWTH ANALYSIS: LatentClassGrowthAnalysis.txt
 
-LATENT CLASS GROWTH ANALYSIS
+     c) LONGITUDINAL LATENT CLASS ANALYSIS: LongitudinalLatentClassAnalysis.txt
 
-LatentClassGrowthAnalysis.txt
+2. Models that relate an explanatory variable to latent trajectories using:
+     a) 1-step approach for a GROWTH MIXTURE MODEL: LBMI_GMM4_onBW_1step.txt
 
-LONGITUDINAL LATENT CLASS ANALYSIS
+     b) 3-steps approach for a GROWTH MIXTURE MODEL: LBMI_GMM4_onBW_3steps.txt
+     
+     c) 1-step approach for a LATENT CLASS GROWTH ANALYSIS MODEL: LBMI_LCGA5_onBW_1step.txt
 
-LongitudinalLatentClassAnalysis.txt
-
+     d) 3-steps approach for a LATENT CLASS GROWTH ANALYSIS MODEL: LBMI_LCGA5_onBW_3steps.txt
 
 
 
