@@ -1,0 +1,38 @@
+ TITLE:  lfat_index on LCGA 5 classes of Log BMI (3-steps analysis)
+
+ DATA:
+            FILE IS "S:\ICH_PPP_CENB_MAGNET\Paper 1\October 2018\Step 2\step2_data.dat"
+
+            Format is free;
+ !           LISTWISE=ON;
+
+ VARIABLE: 
+  NAMES ARE
+        ID bw matage mated lfat_index 
+        bmi8 bmi10 bmi11 bmi12 bmi13 bmi16 
+        lbmi8 lbmi10 lbmi11 lbmi12 lbmi13 lbmi16
+		kc422 ke222 kg312 kk523 km5062 kq677 kt6012 ku884; 
+  USEV ARE
+      lbmi8 lbmi10 lbmi11 lbmi12 lbmi13 lbmi16  ;
+  MISSING ARE .;
+  IDVARIABLE= id;
+  CLASSES= C(5);
+  AUXILIARY = lfat_index (DU3STEP);
+
+ANALYSIS:
+              TYPE = MIXTURE ;
+      	      STARTS = 100 20;
+    	      STITERATIONS = 10 ;
+              PROCESS= 10(STARTS)
+
+MODEL:
+    %OVERALL%
+     i s q | lbmi8@-.4 lbmi10@-.2 lbmi11@-0.1 lbmi12@0 lbmi13@0.1 lbmi16@0.4  ;
+    i-q@0 ;
+
+  PLOT:
+  SERIES = lbmi8-lbmi16(S);
+  TYPE = PLOT3 ;
+
+  OUTPUT:	CINTERVAL;
+
