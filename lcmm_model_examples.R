@@ -1,3 +1,9 @@
+## Package lcmm 
+##  
+## Cecile Proust-Lima, Viviane Philipps, Amadou Diakite & Benoit Liquet: lcmm: Extended Mixed Models Using Latent Classes and Latent Processes. 
+## R package version 1.81. https://CRAN.R-project.org/package=lcmm 
+# Note: Data needs to be in long format  
+
 library(lcmm)
 
 #load data
