@@ -5,7 +5,7 @@ All code written by Moritz Herle and Bianca De Stavola.
 This publication is part of a grant led by Nadia Micali funded by the UK Medical Research Council and the Medical Research Foundation (ref: MR/R004803/1)
 Analyses for this project were conducted in MPLUS (Version 8.1). 
 ****************************
-This repository includes the following example Mplus scripts to estimate: 
+This repository includes the following example Mplus and Stata scripts to estimate: 
 
 1. Three types of latent trajectory models:
 
@@ -35,6 +35,10 @@ This repository includes the following example Mplus scripts to estimate:
 
      d) 3-steps approach for a LATENT CLASS GROWTH ANALYSIS MODEL: LBMI_LCGA5_onY_3steps.txt
 
+4. Stata scripts 
 
+5. Example code to estimate Growth mixture models and latent class growth analyses in R using lcmm package 
+     
+     lcmm_model_examples.R 
 
 
