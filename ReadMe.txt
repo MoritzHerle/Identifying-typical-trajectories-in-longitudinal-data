@@ -36,9 +36,16 @@ This repository includes the following example Mplus and Stata scripts to estima
      d) 3-steps approach for a LATENT CLASS GROWTH ANALYSIS MODEL: LBMI_LCGA5_onY_3steps.txt
 
 4. Stata scripts 
-
+      a)  LATENT CLASS GROWTH ANALYSIS: LatentClassGrowthAnalysis.do
+      
 5. Example code to estimate Growth mixture models and latent class growth analyses in R using lcmm package 
      
-     lcmm_model_examples.R 
+     a) lcmm_model_examples.R 
+     
+     
+ Nota Bene  <-- Results obtained from Stata or R are likely to differ from those obtained from MPlus for several reasons.
+                 In general, beside differences in maximization algorithms, the differnces arise because of the more general nature
+                 of the models usually specified in MPlus.
+ 
 
 
