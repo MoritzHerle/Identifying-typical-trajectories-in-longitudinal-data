@@ -40,12 +40,12 @@ This repository includes the following example Mplus and Stata scripts to estima
       
 5. Example code to estimate Growth mixture models and latent class growth analyses in R using lcmm package 
      
-     a) lcmm_model_examples.R 
+      a)  GROWTH MIXTURE MODEL: lcmm_model_examples.R 
      
      
- Nota Bene  <-- Results obtained from Stata or R are likely to differ from those obtained from MPlus for several reasons.
-                 In general, beside differences in maximization algorithms, the differnces arise because of the more general nature
-                 of the models usually specified in MPlus.
+ Note  <-- Results obtained in Stata or R are likely to differ from those obtained in MPlus for several reasons.
+                 In general, beside differences in maximization algorithms, the differnces arise because of the 
+                 more general specification of the models usually fitted in MPlus.
  
 
 
